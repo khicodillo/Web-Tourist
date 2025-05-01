@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isang Pateros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>MUNICIPALITY OF PATEROS</h1>
+            <p><i>"Welcome to Pateros — where every street has a story, every bite tells our heritage, and every visit feels like home. Come explore, enjoy, and make memories with us!"</i></p>
+            <button class="cta-button" onclick="scrollToDestinations()">Explore Destinations</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destinations">
+                <!-- will be insert by JavaScript-->
+            </div>
+        </section>
+        
+        <section class="about-section" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Pateros — the Balut Capital of the Philippines!</p>
+            <p>Nestled in the heart of Metro Manila, Pateros is a small yet vibrant municipality known for its rich cultural heritage, warm-hearted locals, and time-honored traditions. As the only remaining municipality in the region, Pateros proudly preserves its unique identity while embracing modern growth.</p>
+            <p>Our town is best known for its world-famous balut (boiled fertilized duck egg), but there's so much more to discover — from our centuries-old churches and lively festivals to peaceful riverside walks and thriving local industries.</p>
+            <p>This website was created to showcase the beauty, history, and soul of Pateros. Whether you're a curious traveler, a returning visitor, or someone looking to experience authentic Filipino culture, we're here to guide you on a journey filled with unforgettable experiences.</p>
+            <p>Come explore Pateros — where tradition lives on and every moment feels like coming home.</p>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@isangpateros.com</p>
+        <p>Phone: +02 (888) 123-4567</p>
+        <p>&copy; 2025 Isang Pateros. Small Town with a Big Dream.</p>
+    </footer>
+    
+    <div class="modal" id="destinationModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="gallery-container">
+                <!-- Gallery slides will be inserted here by JavaScript -->
+                <button class="gallery-prev" onclick="changeSlide(-1)">❮</button>
+                <button class="gallery-next" onclick="changeSlide(1)">❯</button>
+                <div class="gallery-nav">
+                    <!-- Gallery dots will be inserted here by JavaScript -->
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <h3>Highlights:</h3>
+                <ul id="modalHighlights"></ul>
+                <h3>Best Time to Visit:</h3>
+                <p id="modalBestTime"></p>
+                <h3>Location:</h3>
+                <p id="modalLocation"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
